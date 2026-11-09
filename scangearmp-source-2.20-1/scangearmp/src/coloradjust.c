@@ -1244,11 +1244,11 @@ CNMSBool CnmsColAdjChannelItemSet(
 
 	if( ( CnmsColAdjGetDialogInfo( id, &dlg ) ) != CNMS_NO_ERR ){
 		DBGMSG( "[CnmsColAdjChannelItemSet] Arg Value is Invalid. id[%d]\n", id );
-		return;
+		return CNMS_FALSE;
 	}
 	if( ( color < 0 ) || ( color >= CNMS_CA_COLORGROUP_MAX ) ){
 		DBGMSG( "[CnmsColAdjChannelItemSet] Arg Value is invalid. color[%d]\n",color );
-		return;
+		return CNMS_FALSE;
 	}
 
 	switch( id ){
