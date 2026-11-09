@@ -723,7 +723,7 @@ void cmt_network_mutex_unlock( void )
 	}
 }
 
-void cmt_network_keep_session( CNNLHANDLE hnd )
+static void cmt_network_keep_session( CNNLHANDLE hnd )
 {
 	int				i;
 	unsigned long	d_time;

@@ -340,7 +340,7 @@ EXIT:
 static CNMSInt32 ret_Preview_ChangeStatus_Exec = CNMS_ERR;
 static CNMSInt32 mode_Preview_ChangeStatus_Exec;
 
-gint Preview_ChangeStatus_Exec(
+static gint Preview_ChangeStatus_Exec(
 		CNMSVoid )
 {
 	CNMSInt32		Actionmode = mode_Preview_ChangeStatus_Exec;

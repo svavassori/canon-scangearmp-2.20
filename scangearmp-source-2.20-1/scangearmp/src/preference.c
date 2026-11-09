@@ -1201,7 +1201,7 @@ EXIT:
 
 static CNMSInt32 result_Preference_GetDeviceSettings_Exec = CNMS_ERR;
 
-gboolean Preference_GetDeviceSettings_Exec(
+static gboolean Preference_GetDeviceSettings_Exec(
 		gpointer	data )
 {
 	CANON_DEVICE_SETTINGS	*pdevsets = (CANON_DEVICE_SETTINGS *)data;
@@ -1224,7 +1224,7 @@ EXIT:
 
 static CNMSInt32 result_Preference_SetDeviceSettings_Exec = CNMS_ERR;
 
-gboolean Preference_SetDeviceSettings_Exec(
+static gboolean Preference_SetDeviceSettings_Exec(
 		gpointer	data )
 {
 	CANON_DEVICE_SETTINGS	*pdevsets = (CANON_DEVICE_SETTINGS *)data;
