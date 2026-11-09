@@ -1,4 +1,4 @@
-FROM debian:12.15
+FROM debian:13.7
 
 RUN export DEBIAN_FRONTEND=noninteractive \
     && apt-get update \
@@ -7,8 +7,8 @@ RUN export DEBIAN_FRONTEND=noninteractive \
             dpkg-dev \
             debhelper-compat \
     && apt-get install --yes --no-install-recommends \
-            libcanberra-gtk-module \
-            libgimp2.0-dev \
+            libcanberra-gtk3-module \
+            libgtk2.0-dev \
             libsane-dev \
             libtool-bin \
             libusb-dev \

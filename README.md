@@ -28,8 +28,8 @@ SHA512: 5ce44c83831be99d19f7d9c0323dcb5534e88cbb9855a2361ffd85815389532a052fcc16
 ## How to build the binary package
 
 ```bash
-docker build -t canon-build-env:12.15 .
-docker run --rm -v $(pwd):/build -it -u $(id -u):$(id -g) canon-build-env:12.15
+docker build -t canon-build-env:13.7 .
+docker run --rm -v $(pwd):/build -it -u $(id -u):$(id -g) canon-build-env:13.7
 cd /build/scangearmp-source-2.20-1
 dpkg-buildpackage --build=binary --unsigned-changes --unsigned-source
 ```
@@ -39,7 +39,7 @@ dpkg-buildpackage --build=binary --unsigned-changes --unsigned-source
 ```bash
 # to show magic cookie
 xauth list
-docker run --rm -it --privileged -v $(pwd):/debs -v /dev/bus/usb:/dev/bus/usb -v /tmp/.X11-unix/:/tmp.X11-unix -e DISPLAY=$DISPLAY --net=host debian:12.15 bash
+docker run --rm -it --privileged -v $(pwd):/debs -v /dev/bus/usb:/dev/bus/usb -v /tmp/.X11-unix/:/tmp.X11-unix -e DISPLAY=$DISPLAY --net=host debian:13.7 bash
 cd /debs
 apt-get update
 apt-get install --yes xauth ./scangearmp-common_2.20-1_amd64.deb ./scangearmp-mg2500series_2.20-1_amd64.deb
