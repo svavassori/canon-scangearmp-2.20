@@ -100,8 +100,8 @@ CNMSVoid  Preference_InitAutoPower( CNMSInt32 type );
 
 CNMSInt32 Preference_QuietSettings_Show( CNMSVoid );
 CNMSInt32 Preference_QuietSettings_Hide( CNMSInt32 mode );
-CNMSInt32 Preference_QuietSettings_SetDefaults( CNMSVoid );
-CNMSInt32 Preference_QuietSettings_RadioClicked( CNMSInt32 mode );
+CNMSVoid Preference_QuietSettings_SetDefaults( CNMSVoid );
+CNMSVoid Preference_QuietSettings_RadioClicked( CNMSInt32 mode );
 
 CNMSInt32 Preference_AutoPowerSettings_Show( CNMSVoid );
 CNMSInt32 Preference_AutoPowerSettings_Hide( CNMSInt32 mode );

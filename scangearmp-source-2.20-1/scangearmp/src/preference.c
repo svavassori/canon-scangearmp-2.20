@@ -1395,7 +1395,7 @@ EXIT:
 	return ret;
 }
 
-CNMSInt32 Preference_QuietSettings_SetDefaults(
+CNMSVoid Preference_QuietSettings_SetDefaults(
 		CNMSVoid )
 {
 	if( lpPrefComp == CNMSNULL ){
@@ -1415,12 +1415,12 @@ CNMSInt32 Preference_QuietSettings_SetDefaults(
 	
 EXIT:
 #ifdef	__CNMS_DEBUG_PREFERENCE__
-	DBGMSG( "[Preference_QuietSettings_Hide()]\n" );
+	DBGMSG( "[Preference_QuietSettings_SetDefaults()]\n" );
 #endif
 	return;
 }
 
-CNMSInt32 Preference_QuietSettings_RadioClicked(
+CNMSVoid Preference_QuietSettings_RadioClicked(
 		CNMSInt32 mode )
 {
 	if( lpPrefComp == CNMSNULL ){
