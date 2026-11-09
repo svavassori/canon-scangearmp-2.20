@@ -124,7 +124,7 @@ typedef struct{
 	CNMSInt32			OutRes;				/* output resolution										*/
 
 	CNMSVoid			*HistogramWork;		/* Work area for Histogram									*/
-	CNMSPoint			ScanOffset;			/* SCAN,PREVIEWFscan offset (InRes)						*/
+	CNMSPoint			ScanOffset;			/* SCAN,PREVIEW: scan offset (InRes)						*/
 
 	CNMSBool			created_tmpfile;
 }CNMSFdInfo;
@@ -1852,7 +1852,7 @@ DBGMSG( "-> CnmsScanFlowSaneGetParameters\n");
 		return	CNMS_ERR;	
 	}
 	/*
-		SCAN, PREVIEWF update BaseSize
+		SCAN, PREVIEW: update BaseSize
 	*/
 	info->Depth = parm->depth;
 	info->BaseSize.Width = ( parm->bytes_per_line * 8 ) / ( info->Depth * info->Samples);
