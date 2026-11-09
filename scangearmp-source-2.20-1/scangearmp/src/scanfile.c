@@ -35,6 +35,7 @@
 //#include <unistd.h>
 #include <limits.h>
 #include <dlfcn.h>
+#include <zlib.h>
 
 #include "cnmsfunc.h"
 #include "png.h"
