@@ -5,8 +5,8 @@ INCLUDES = \
 	-DPACKAGE_LOCALE_DIR=\""$(prefix)/$(DATADIRNAME)/locale"\" \
 	-I$(top_srcdir)/include \
 	-I$(top_srcdir)/backend \
-	@PACKAGE_CFLAGS@ \
-	@GIMP_CFLAGS@
+	@PACKAGE_CFLAGS@
+#	@GIMP_CFLAGS@
 
 bin_PROGRAMS = scangearmp
 

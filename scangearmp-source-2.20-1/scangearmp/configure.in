@@ -37,10 +37,10 @@ PKG_CHECK_MODULES(PACKAGE, [$pkg_modules])
 AC_SUBST(PACKAGE_CFLAGS)
 AC_SUBST(PACKAGE_LIBS)
 
-gimp_modules="gimp-2.0 >= 2.0.0"
-PKG_CHECK_MODULES(GIMP, [$gimp_modules])
-AC_SUBST(GIMP_CFLAGS)
-dnl AC_SUBST(GIMP_LIBS)
+#gimp_modules="gimp-2.0 >= 2.0.0"
+#PKG_CHECK_MODULES(GIMP, [$gimp_modules])
+#AC_SUBST(GIMP_CFLAGS)
+#dnl AC_SUBST(GIMP_LIBS)
 
 dnl AC_CHECK_LIB(png, png_create_write_struct, PNG_LIBS="-lpng", PNG_LIBS="")
 dnl PNG_LIBS="-lpng"
@@ -64,7 +64,7 @@ AC_SUBST(GETTEXT_PACKAGE)
 AC_DEFINE_UNQUOTED(GETTEXT_PACKAGE,"$GETTEXT_PACKAGE")
 
 dnl OPTION
-CFLAGS="-O2 -D__GIMP_PLUGIN_ENABLE__ -D_FILE_OFFSET_BITS=64"
+CFLAGS="-O2 -D_FILE_OFFSET_BITS=64"
 
 dnl Add the languages which your application supports here.
 ALL_LINGUAS="de fr ja zh"
