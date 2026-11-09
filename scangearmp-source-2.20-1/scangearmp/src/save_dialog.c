@@ -52,6 +52,7 @@
 #include "scanstdlg.h"
 #include "file_control.h"
 #include "cnmsstrings.h"
+#include "scanfile.h"
 
 #include "errors.h"
 

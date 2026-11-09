@@ -31,6 +31,8 @@
 #include "coloradjust.h"
 #undef	_CNMS_CA_GLOBALS_
 
+#include "com_gtk.h"
+
 /* #define __COLOR_ADJUST_DEBUG__ */
 
 #include "prev_main.h"

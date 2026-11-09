@@ -46,6 +46,10 @@
 #include "cnmsability.h"
 #include "w1.h"
 
+#include "scanmain.h"
+#include "com_gtk.h"
+#include "coloradjust_hg.h"
+
 #include "errors.h"
 
 #define	PREVIEW_OUT_COLOR_R			(64)

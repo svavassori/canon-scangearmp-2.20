@@ -47,6 +47,7 @@
 #include "cnmsstr.h"
 #include "scanflow.h"
 
+#include "scanstdlg.h"
 #include "scanmsg.h"
 #include "errors.h"
 

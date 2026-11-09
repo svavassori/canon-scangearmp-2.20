@@ -50,7 +50,14 @@
 
 #include "progress_bar.h"
 #include "coloradjust.h"
+#include "coloradjust_bc.h"
+#include "coloradjust_fr.h"
+#include "coloradjust_hg.h"
+#include "coloradjust_mc.h"
+#include "coloradjust_tc.h"
 #include "child_dialog.h"
+#include "scanfile.h"
+#include "scanstdlg.h"
 
 #ifdef	__GIMP_PLUGIN_ENABLE__
 	#include "scangimp.h"
