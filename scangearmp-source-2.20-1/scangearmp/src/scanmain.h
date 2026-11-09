@@ -51,8 +51,10 @@ CNMSInt32 CnmsScanGetRealMinMaxSize( CNMSInt32 source, CNMSInt32 *lpMin, CNMSInt
 
 CNMSInt32 CnmsScanGetMinMaxScale( CNMSInt32 res, CNMSInt32 *lpMinMax );
 
-CNMSInt32 CnmsScanChageStatus( CNMSInt32 ActionMode, CNMSFd dstFd, LPCNMS_ROOT root, CNMSUIReturn *lpRtn );
+CNMSInt32 CnmsScanChangeStatus( CNMSInt32 ActionMode, CNMSFd dstFd, LPCNMS_ROOT root, CNMSUIReturn *lpRtn );
 CNMSVoid CnmsScanCancel( CNMSVoid );
+CNMSVoid CnmsAllScanDataDispose( LPCNMS_ROOT root );
+CNMSInt32 CnmsGetDeviceIndexSelectedLatest( CNMSVoid );
 
 CNMSInt32 CnmsGetScanSourceAbility( CNMSInt32 uiMediaType );
 

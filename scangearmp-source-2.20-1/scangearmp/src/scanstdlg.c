@@ -96,7 +96,7 @@ _EXIT:
 }
 
 
-void error_dialog_ok_del_clicked()
+CNMSVoid error_dialog_ok_del_clicked(CNMSVoid)
 {
 	CNMSInt32	ldata;
 	
